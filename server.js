@@ -31,8 +31,11 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 // Database configuration with mongoose
-//mongoose.connect("mongodb://heroku_lt4tj23t:fts4bbsahl3q9ota9ih3bm855j@ds031883.mlab.com:31883/heroku_lt4tj23t");
-mongoose.connect("mongodb://localhost/newsscrapper");
+mongoose.connect("mongodb://heroku_rq9b6rcz:mms4qtiotemgspm82v9uofi66@ds139844.mlab.com:39844/heroku_rq9b6rcz");
+
+//local Database config with Mongoose
+//mongoose.connect("mongodb://localhost/newsscrapper");
+
 var db = mongoose.connection;
 
 // Show any mongoose errors
